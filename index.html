@@ -1,72 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar Menu Active Tab</title>
-  <link rel="stylesheet" href="Sass/Style.css">
-</head>
-<body>
-  <div class="Navigation">
-    <ul>
-      <li class="List">
-        <a href="#">
-          <span class="Icon">
-            <ion-icon name="home-outline"></ion-icon>
-          </span>
-          <span class="Title">Home</span>
-        </a>
-      </li>
-      <li class="List">
-        <a href="#">
-          <span class="Icon">
-            <ion-icon name="person-outline"></ion-icon>
-          </span>
-          <span class="Title">Profile</span>
-        </a>
-      </li>
-      <li class="List">
-        <a href="#">
-          <span class="Icon">
-            <ion-icon name="chatbubbles-outline"></ion-icon>
-          </span>
-          <span class="Title">Messages</span>
-        </a>
-      </li>
-      <li class="List">
-        <a href="#">
-          <span class="Icon">
-            <ion-icon name="chatbubbles-outline"></ion-icon>
-          </span>
-          <span class="Title">Setting</span>
-        </a>
-      </li>
-      <li class="List">
-        <a href="#">
-          <span class="Icon">
-            <ion-icon name="chatbubbles-outline"></ion-icon>
-          </span>
-          <span class="Title">Help</span>
-        </a>
-      </li>
-      <li class="List">
-        <a href="#">
-          <span class="Icon">
-            <ion-icon name="lock-closed-outline"></ion-icon>
-          </span>
-          <span class="Title">Password</span>
-        </a>
-      </li>
-      <li class="List">
-        <a href="#">
-          <span class="Icon"><ion-icon name="log-out-outline"></ion-icon></span>
-          <span class="Title">Sign Out</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar Menu Active Tab</title>
+    <link rel="stylesheet" href="Sass/Style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="Navigation">
+      <ul>
+        <li class="List active" onclick="active(1);">
+          <a href="#">
+            <b></b><b></b>
+            <span class="Icon">
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <span class="Title">Home</span>
+          </a>
+        </li>
+        <li class="List" onclick="active(2);">
+          <a href="#">
+            <b></b><b></b>
+            <span class="Icon">
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <span class="Title">Profile</span>
+          </a>
+        </li>
+        <li class="List" onclick="active(3);">
+          <a href="#">
+            <b></b><b></b>
+            <span class="Icon">
+              <ion-icon name="chatbubbles-outline"></ion-icon>
+            </span>
+            <span class="Title">Messages</span>
+          </a>
+        </li>
+        <li class="List" onclick="active(4);">
+          <a href="#">
+            <b></b><b></b>
+            <span class="Icon">
+              <ion-icon name="settings-outline"></ion-icon>
+            </span>
+            <span class="Title">Setting</span>
+          </a>
+        </li>
+        <li class="List" onclick="active(5);">
+          <a href="#">
+            <b></b><b></b>
+            <span class="Icon">
+              <ion-icon name="help-outline"></ion-icon>
+            </span>
+            <span class="Title">Help</span>
+          </a>
+        </li>
+        <li class="List" onclick="active(6);">
+          <a href="#">
+            <b></b><b></b>
+            <span class="Icon">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <span class="Title">Password</span>
+          </a>
+        </li>
+        <li class="List" onclick="active(7);">
+          <a href="#">
+            <b></b><b></b>
+            <span class="Icon"
+              ><ion-icon name="log-out-outline"></ion-icon
+            ></span>
+            <span class="Title">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="Menu">
+      <ion-icon name="menu-outline" class="Open"></ion-icon>
+      <ion-icon name="close-outline" class="Close"></ion-icon>
+    </button>
+  </body>
+  <script src="./JS/Script.js"></script>
 </html>
